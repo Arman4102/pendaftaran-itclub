@@ -1,1 +1,43 @@
-/* Add styles here */
+@media only screen and (max-width: 680px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+      }    
+
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        overflow: hidden;
+      }
+
+    .background {
+        position: fixed; /* Menetapkan posisi elemen menjadi tetap terhadap viewport */
+        top: 50%; /* Memposisikan bagian atas elemen di tengah viewport secara vertikal */
+        left: 30%; /* Memposisikan sisi kiri elemen di tengah viewport secara horizontal */
+        transform: translate(-45%, -50%); /* Menggeser elemen ke atas dan ke kiri sebesar setengah lebar dan tingginya untuk memusatkannya secara sempurna */
+        z-index: -2; /* Menempatkan elemen di belakang elemen lain dengan z-index yang lebih tinggi */
+        width: 100%; /* Mengatur lebar elemen agar memenuhi lebar viewport */
+        filter: blur(5px) brightness(80%) contrast(90%); /* Menambahkan efek blur, kecerahan, dan kontras pada elemen */
+    }
+
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    height: fit-content;
+    width: 80%;
+    height: 100%;
+    padding: 1rem;
+    border: solid 2px black;
+  }
+
+
+}
