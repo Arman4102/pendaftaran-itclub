@@ -21,20 +21,32 @@
   }
 
   .background {
-    position: fixed;
+    position: absolute;
+    overflow: hidden;
     /* Menetapkan posisi elemen menjadi tetap terhadap viewport */
     top: 50%;
     /* Memposisikan bagian atas elemen di tengah viewport secara vertikal */
-    left: 30%;
+    left: 45%;
     /* Memposisikan sisi kiri elemen di tengah viewport secara horizontal */
     transform: translate(-45%, -50%);
     /* Menggeser elemen ke atas dan ke kiri sebesar setengah lebar dan tingginya untuk memusatkannya secara sempurna */
     z-index: -2;
     /* Menempatkan elemen di belakang elemen lain dengan z-index yang lebih tinggi */
-    width: 100%;
+    width: 100vw;
+    height: 150%;
     /* Mengatur lebar elemen agar memenuhi lebar viewport */
     filter: blur(5px) brightness(80%) contrast(90%);
     /* Menambahkan efek blur, kecerahan, dan kontras pada elemen */
+  }
+
+  .bg {
+    width: 100vw;
+    height: 120vh;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
 
@@ -56,14 +68,14 @@
     position: absolute;
     height: 30vh;
     width: auto;
-    top: 3vh;
+    top: 1vh;
     /* border: solid 2px black; */
     margin: 0;
   }
 
   .text-logo {
     position: absolute;
-    top: 32.5vh;
+    top: 30vh;
     height: 4rem;
     width: auto;
     /* border: solid 2px black; */
@@ -71,7 +83,7 @@
 
   p {
     position: absolute;
-    top: 40vh;
+    top: 38vh;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
@@ -89,7 +101,7 @@
     /* 3 kolom dengan lebar sama */
     grid-template-rows: repeat(3, 1fr);
     /* 3 baris dengan tinggi sama */
-    top: 45vh;
+    top: 42.5vh;
     height: 50%;
     width: 100%;
     /* border: solid 2px white; */
