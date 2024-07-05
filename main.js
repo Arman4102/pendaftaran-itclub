@@ -1,3 +1,5 @@
+console.log("WM arman yang vuat web sama seluruh assetnya")
+
 document.addEventListener('DOMContentLoaded', () => {
   const body = document.body;
   const angkaElements = document.querySelectorAll(".angka"); 
