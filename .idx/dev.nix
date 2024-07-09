@@ -17,10 +17,10 @@
     ];
     # Enable previews and customize configuration
     previews = {
-      enable = true;
+      enable = false;
       previews = {
         web = {
-          command = ["python3" "-m" "http.server" "$PORT" "--bind" "0.0.0.0"];
+          command = ["python3" "-m" "http.server" "$PORT" "--bind" "0.0.0.P0"];
           manager = "web";
         };
       };
